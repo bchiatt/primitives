@@ -28,11 +28,13 @@ b = 4;
 c = 5;
 d = 6;
 
-e = ( ( a + b ) / ( b - c ) ) * ( ( b - a ) / ( c - d));
+var base = ((a+b)/(b-c))*((b-a)/(c-d));
+var power = (a+b);
+var e = Math.pow(base, power);
 
 console.log(e)
 
-var age = 8;
+var age = 22;
 
 if (age >= 21){
   console.log('your are legal to drink');
@@ -52,6 +54,42 @@ if (age >= 0 && age <= 5) {
   console.log('NC-17 rated');
 }else{
   console.log('X rated');
+}
+
+// switch string example
+//
+
+var day = 6;
+
+switch (day) {
+  case 0:
+    day = "Sunday";
+    console.log('today is Sunday');
+    break;
+  case 1:
+    day = "Monday";
+    console.log('today is Monday');
+    break;
+  case 2:
+    day = "Tuesday";
+    console.log('today is Tuesday');
+    break;
+  case 3:
+    day = "Wednesday";
+    console.log('today is Wednesday');
+    break;
+  case 4:
+    day = "Thursday";
+    console.log('today is Thursday');
+    break;
+  case 5:
+    day = "Friday";
+    console.log('today is Friday');
+    break;
+  case 6:
+    day = "Saturday";
+    console.log('today is Saturday');
+    break;
 }
 
 // while loop
